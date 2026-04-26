@@ -1,0 +1,26 @@
+/* הגדרת גוף העמוד כרשת */
+body {
+    display: grid;
+    /* הגדרת אזורים: שורה עליונה לראש, אמצע לתוכן, ותחתונה לסיומת */
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto; /* הראש והסוף לפי התוכן, האמצע לוקח את כל השאר */
+    min-height: 100vh; /* מבטיח שהפוטר תמיד יהיה למטה */
+    margin: 0;
+}
+
+/* שיוך האלמנטים לאזורים שהגדרנו */
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+}

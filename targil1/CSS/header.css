@@ -1,0 +1,41 @@
+body {
+    font-size: 1.25rem; 
+    direction: rtl;
+    color: #a4a3fa; 
+    background-color: #fffafa;
+    margin: 0;
+    padding: 1.5rem;
+}
+    
+nav a  {
+    text-decoration: none;
+    color: #007bff;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: 0.3s
+}
+
+nav a:hover {
+    color: #f44336; 
+    text-decoration: underline; 
+}
+
+table tr:hover, ul li:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); 
+    background-color: #ffffff;
+    box-shadow: 0 0 1.25rem rgba(255, 255, 0, 0.8);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+table, ul {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;  
+    padding: 0.5rem;        
+}
